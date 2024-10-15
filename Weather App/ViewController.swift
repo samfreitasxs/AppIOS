@@ -8,29 +8,36 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    private lazy var customView: UIView = {
+        let view = UIView(frame: .zero)
+        view.backgroundColor = UIColor.blue
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        view.backgroundColor = .red
-        
-        let customView = UIView(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
-        customView.backgroundColor = .blue
+        setupView()
+    }
+    
+    private func setupView() {
+        view.backgroundColor = UIColor.red
+        setHierarchy()
+        setConstraints()
+    }
+    
+    private func setHierarchy() {
         view.addSubview(customView)
     }
-
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-    }
     
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
+    private func setConstraints() {
+        NSLayoutConstraint.activate([
+            customView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 100),
+            customView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 50),
+            customView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -50),
+            customView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -100)
+        ])
     }
-    
-    override func viewDidDisappear(_ animated: Bool) {
-        super.viewDidDisappear(animated)
-    }
-
 }
 
