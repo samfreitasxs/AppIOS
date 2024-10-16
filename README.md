@@ -1,4 +1,4 @@
-weather-forecast-app
+## weather-forecast-app
 
 Aplicativo iOS de previsão de tempo integrado com a API OpenWeather. Esse projeto faz parte do curso de introdução ao desenvolvimento iOS do canal Attekita Dev em parceria com a Backfront Academy.
 
@@ -13,7 +13,7 @@ ViewCode vs Storyboards
 Autolayout
 Integração com APIs
 Processamento multi-thread
-Link do Figma
+## Link do Figma
 
 https://www.figma.com/file/OczdlZrkU7Z7DyYLLDoiPo/App-Tempo?type=design&node-id=0%3A1&mode=dev
 
