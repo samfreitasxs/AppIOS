@@ -29,7 +29,7 @@ class ViewController: UIViewController {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font = UIFont.systemFont(ofSize: 20)
-        label.text = "Sao Paulo"
+        label.text = "Maringa"
         label.textAlignment = .center
         label.textColor = UIColor(named: "primaryColor")
         return label
@@ -47,7 +47,7 @@ class ViewController: UIViewController {
     private lazy var weatherIcon: UIImageView = {
        let imageView = UIImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.image = UIImage(named: "sunIcon")
+        imageView.image = UIImage(named: "sunicon")
         imageView.contentMode = .scaleAspectFit
         return imageView
     }()
