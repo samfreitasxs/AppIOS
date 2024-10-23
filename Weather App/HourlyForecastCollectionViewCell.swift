@@ -55,8 +55,7 @@ class HourlyForecastCollectionViewCell: UICollectionViewCell {
     
     override init (frame: CGRect) {
         super.init(frame: frame)
-        
-        contentView.backgroundColor = .green
+        setupView()
     }
     
     required init?(coder: NSCoder) {
@@ -75,7 +74,6 @@ class HourlyForecastCollectionViewCell: UICollectionViewCell {
     }
     
     private func setConstraints () {
-        
         NSLayoutConstraint.activate([
             stackView.topAnchor.constraint(equalTo: contentView.topAnchor),
             stackView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor),

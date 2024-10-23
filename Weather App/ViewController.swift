@@ -10,7 +10,7 @@ import UIKit
 class ViewController: UIViewController, UICollectionViewDataSource {
     
     private lazy var backgroundView: UIImageView = {
-        let imageView = UIImageView(frame: .zero)
+        let imageView = UIImageView()
         imageView.image = UIImage(named: "background")
         imageView.contentMode = .scaleAspectFill
         imageView.translatesAutoresizingMaskIntoConstraints = false
@@ -18,7 +18,7 @@ class ViewController: UIViewController, UICollectionViewDataSource {
     }()
     
     private lazy var headerView: UIView = {
-        let view = UIView(frame: .zero)
+        let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
         view.backgroundColor = UIColor.contrastColor
         view.layer.cornerRadius = 20
