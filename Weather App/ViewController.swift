@@ -157,9 +157,16 @@ class ViewController: UIViewController, UICollectionViewDataSource{
         return tableView
     }()
     
+    private let service = Service ()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
+        
+        service.fecthData(city: City(lat: "-23.420999", lon: "-51.933056", name: "Maringá, PR")) { message in
+            print(message)
+
+        }
     }
     
     private func setupView() {

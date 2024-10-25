@@ -16,6 +16,7 @@
 		DF9AD5542CC88EAF00539640 /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9AD5532CC88EAF00539640 /* Color+Extensions.swift */; };
 		DFFFF1692CCACEAF00A23EA6 /* DailyForecastTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFFF1682CCACEAF00A23EA6 /* DailyForecastTableViewCell.swift */; };
 		DFFFF16B2CCB3CB400A23EA6 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFFF16A2CCB3CB400A23EA6 /* UIView+Extensions.swift */; };
+		DFFFF16D2CCB475F00A23EA6 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFFF16C2CCB475F00A23EA6 /* Service.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		DF9AD5532CC88EAF00539640 /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
 		DFFFF1682CCACEAF00A23EA6 /* DailyForecastTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyForecastTableViewCell.swift; sourceTree = "<group>"; };
 		DFFFF16A2CCB3CB400A23EA6 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		DFFFF16C2CCB475F00A23EA6 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				DF0CE3EB2CB9C0EF00614EDD /* AppDelegate.swift */,
 				DF0CE3ED2CB9C0EF00614EDD /* SceneDelegate.swift */,
 				DF0CE3EF2CB9C0EF00614EDD /* ViewController.swift */,
+				DFFFF16C2CCB475F00A23EA6 /* Service.swift */,
 				DFFFF1682CCACEAF00A23EA6 /* DailyForecastTableViewCell.swift */,
 				DFFFF16A2CCB3CB400A23EA6 /* UIView+Extensions.swift */,
 				DF1ECFD92CC298770009A78E /* HourlyForecastCollectionViewCell.swift */,
@@ -147,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DFFFF16B2CCB3CB400A23EA6 /* UIView+Extensions.swift in Sources */,
+				DFFFF16D2CCB475F00A23EA6 /* Service.swift in Sources */,
 				DF9AD5542CC88EAF00539640 /* Color+Extensions.swift in Sources */,
 				DF0CE3F02CB9C0EF00614EDD /* ViewController.swift in Sources */,
 				DFFFF1692CCACEAF00A23EA6 /* DailyForecastTableViewCell.swift in Sources */,
