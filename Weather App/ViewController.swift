@@ -158,19 +158,20 @@ class ViewController: UIViewController, UICollectionViewDataSource{
     }()
     
     private let service = Service ()
+    private var city = City(lat: "-23.420999", lon: "-51.933056", name: "Maringá, PR")
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
         
-        service.fecthData(city: City(lat: "-23.420999", lon: "-51.933056", name: "Maringá, PR")) { message in
+        service.fecthData(city: city ) { message in
             print(message)
 
         }
     }
     
     private func setupView() {
-        view.backgroundColor = UIColor.red
+        view.backgroundColor = .white
         setHierarchy()
         setConstraints()
     }
